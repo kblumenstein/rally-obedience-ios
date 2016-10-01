@@ -22,6 +22,10 @@
 		22A22EA41DA003F5004D5683 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22EA31DA003F5004D5683 /* ExtensionDelegate.swift */; };
 		22A22EA61DA003F5004D5683 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22EA51DA003F5004D5683 /* NotificationController.swift */; };
 		22A22EA81DA003F6004D5683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A22EA71DA003F6004D5683 /* Assets.xcassets */; };
+		22A22EBF1DA00708004D5683 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A22EBD1DA00707004D5683 /* Realm.framework */; };
+		22A22EC01DA00708004D5683 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22A22EBD1DA00707004D5683 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22A22EC11DA00708004D5683 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A22EBE1DA00707004D5683 /* RealmSwift.framework */; };
+		22A22EC21DA00708004D5683 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22A22EBE1DA00707004D5683 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,18 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22A22EC31DA00708004D5683 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22A22EC21DA00708004D5683 /* RealmSwift.framework in Embed Frameworks */,
+				22A22EC01DA00708004D5683 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +121,8 @@
 		22A22EA51DA003F5004D5683 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		22A22EA71DA003F6004D5683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A22EA91DA003F6004D5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A22EBD1DA00707004D5683 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		22A22EBE1DA00707004D5683 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A22EC11DA00708004D5683 /* RealmSwift.framework in Frameworks */,
+				22A22EBF1DA00708004D5683 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +162,8 @@
 		22A22E5A1DA003F5004D5683 = {
 			isa = PBXGroup;
 			children = (
+				22A22EBD1DA00707004D5683 /* Realm.framework */,
+				22A22EBE1DA00707004D5683 /* RealmSwift.framework */,
 				22A22E651DA003F5004D5683 /* rallyobedience */,
 				22A22E7A1DA003F5004D5683 /* rallyobedienceTests */,
 				22A22E851DA003F5004D5683 /* rallyobedienceUITests */,
@@ -236,6 +258,8 @@
 				22A22E601DA003F5004D5683 /* Frameworks */,
 				22A22E611DA003F5004D5683 /* Resources */,
 				22A22EB31DA003F6004D5683 /* Embed Watch Content */,
+				22A22EC31DA00708004D5683 /* Embed Frameworks */,
+				22A22EC41DA0081C004D5683 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -421,6 +445,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22A22EC41DA0081C004D5683 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22A22E5F1DA003F5004D5683 /* Sources */ = {
@@ -679,6 +719,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = rallyobedience/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedience;
@@ -692,6 +736,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = rallyobedience/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedience;
@@ -706,6 +754,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = RealmSwift.Framework;
 				INFOPLIST_FILE = rallyobedienceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedienceTests;
@@ -721,6 +770,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = RealmSwift.Framework;
 				INFOPLIST_FILE = rallyobedienceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedienceTests;
