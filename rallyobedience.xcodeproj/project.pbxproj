@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22A22E671DA003F5004D5683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22E661DA003F5004D5683 /* AppDelegate.swift */; };
+		22A22E691DA003F5004D5683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22E681DA003F5004D5683 /* ViewController.swift */; };
+		22A22E6C1DA003F5004D5683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A22E6A1DA003F5004D5683 /* Main.storyboard */; };
+		22A22E6E1DA003F5004D5683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A22E6D1DA003F5004D5683 /* Assets.xcassets */; };
+		22A22E711DA003F5004D5683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A22E6F1DA003F5004D5683 /* LaunchScreen.storyboard */; };
+		22A22E7C1DA003F5004D5683 /* rallyobedienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22E7B1DA003F5004D5683 /* rallyobedienceTests.swift */; };
+		22A22E871DA003F5004D5683 /* rallyobedienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22E861DA003F5004D5683 /* rallyobedienceUITests.swift */; };
+		22A22E8C1DA003F5004D5683 /* rallyobedience WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 22A22E8B1DA003F5004D5683 /* rallyobedience WatchKit App.app */; };
+		22A22E921DA003F5004D5683 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A22E901DA003F5004D5683 /* Interface.storyboard */; };
+		22A22E941DA003F5004D5683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A22E931DA003F5004D5683 /* Assets.xcassets */; };
+		22A22E9B1DA003F5004D5683 /* rallyobedience WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22A22E9A1DA003F5004D5683 /* rallyobedience WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22A22EA21DA003F5004D5683 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22EA11DA003F5004D5683 /* InterfaceController.swift */; };
+		22A22EA41DA003F5004D5683 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22EA31DA003F5004D5683 /* ExtensionDelegate.swift */; };
+		22A22EA61DA003F5004D5683 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22EA51DA003F5004D5683 /* NotificationController.swift */; };
+		22A22EA81DA003F6004D5683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A22EA71DA003F6004D5683 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22A22E781DA003F5004D5683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A22E5B1DA003F5004D5683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A22E621DA003F5004D5683;
+			remoteInfo = rallyobedience;
+		};
+		22A22E831DA003F5004D5683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A22E5B1DA003F5004D5683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A22E621DA003F5004D5683;
+			remoteInfo = rallyobedience;
+		};
+		22A22E8D1DA003F5004D5683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A22E5B1DA003F5004D5683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A22E8A1DA003F5004D5683;
+			remoteInfo = "rallyobedience WatchKit App";
+		};
+		22A22E9C1DA003F5004D5683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A22E5B1DA003F5004D5683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A22E991DA003F5004D5683;
+			remoteInfo = "rallyobedience WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22A22EAF1DA003F6004D5683 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22A22E9B1DA003F5004D5683 /* rallyobedience WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22EB31DA003F6004D5683 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				22A22E8C1DA003F5004D5683 /* rallyobedience WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22A22E631DA003F5004D5683 /* rallyobedience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rallyobedience.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A22E661DA003F5004D5683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22A22E681DA003F5004D5683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22A22E6B1DA003F5004D5683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22A22E6D1DA003F5004D5683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22A22E701DA003F5004D5683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22A22E721DA003F5004D5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A22E771DA003F5004D5683 /* rallyobedienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rallyobedienceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A22E7B1DA003F5004D5683 /* rallyobedienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rallyobedienceTests.swift; sourceTree = "<group>"; };
+		22A22E7D1DA003F5004D5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A22E821DA003F5004D5683 /* rallyobedienceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rallyobedienceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A22E861DA003F5004D5683 /* rallyobedienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rallyobedienceUITests.swift; sourceTree = "<group>"; };
+		22A22E881DA003F5004D5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A22E8B1DA003F5004D5683 /* rallyobedience WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rallyobedience WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A22E911DA003F5004D5683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		22A22E931DA003F5004D5683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22A22E951DA003F5004D5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A22E9A1DA003F5004D5683 /* rallyobedience WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "rallyobedience WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A22EA01DA003F5004D5683 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		22A22EA11DA003F5004D5683 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		22A22EA31DA003F5004D5683 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		22A22EA51DA003F5004D5683 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		22A22EA71DA003F6004D5683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22A22EA91DA003F6004D5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22A22E601DA003F5004D5683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E741DA003F5004D5683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E7F1DA003F5004D5683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E971DA003F5004D5683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22A22E5A1DA003F5004D5683 = {
+			isa = PBXGroup;
+			children = (
+				22A22E651DA003F5004D5683 /* rallyobedience */,
+				22A22E7A1DA003F5004D5683 /* rallyobedienceTests */,
+				22A22E851DA003F5004D5683 /* rallyobedienceUITests */,
+				22A22E8F1DA003F5004D5683 /* rallyobedience WatchKit App */,
+				22A22E9E1DA003F5004D5683 /* rallyobedience WatchKit Extension */,
+				22A22E641DA003F5004D5683 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22A22E641DA003F5004D5683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22A22E631DA003F5004D5683 /* rallyobedience.app */,
+				22A22E771DA003F5004D5683 /* rallyobedienceTests.xctest */,
+				22A22E821DA003F5004D5683 /* rallyobedienceUITests.xctest */,
+				22A22E8B1DA003F5004D5683 /* rallyobedience WatchKit App.app */,
+				22A22E9A1DA003F5004D5683 /* rallyobedience WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22A22E651DA003F5004D5683 /* rallyobedience */ = {
+			isa = PBXGroup;
+			children = (
+				22A22E661DA003F5004D5683 /* AppDelegate.swift */,
+				22A22E681DA003F5004D5683 /* ViewController.swift */,
+				22A22E6A1DA003F5004D5683 /* Main.storyboard */,
+				22A22E6D1DA003F5004D5683 /* Assets.xcassets */,
+				22A22E6F1DA003F5004D5683 /* LaunchScreen.storyboard */,
+				22A22E721DA003F5004D5683 /* Info.plist */,
+			);
+			path = rallyobedience;
+			sourceTree = "<group>";
+		};
+		22A22E7A1DA003F5004D5683 /* rallyobedienceTests */ = {
+			isa = PBXGroup;
+			children = (
+				22A22E7B1DA003F5004D5683 /* rallyobedienceTests.swift */,
+				22A22E7D1DA003F5004D5683 /* Info.plist */,
+			);
+			path = rallyobedienceTests;
+			sourceTree = "<group>";
+		};
+		22A22E851DA003F5004D5683 /* rallyobedienceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22A22E861DA003F5004D5683 /* rallyobedienceUITests.swift */,
+				22A22E881DA003F5004D5683 /* Info.plist */,
+			);
+			path = rallyobedienceUITests;
+			sourceTree = "<group>";
+		};
+		22A22E8F1DA003F5004D5683 /* rallyobedience WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				22A22E901DA003F5004D5683 /* Interface.storyboard */,
+				22A22E931DA003F5004D5683 /* Assets.xcassets */,
+				22A22E951DA003F5004D5683 /* Info.plist */,
+			);
+			path = "rallyobedience WatchKit App";
+			sourceTree = "<group>";
+		};
+		22A22E9E1DA003F5004D5683 /* rallyobedience WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				22A22EA11DA003F5004D5683 /* InterfaceController.swift */,
+				22A22EA31DA003F5004D5683 /* ExtensionDelegate.swift */,
+				22A22EA51DA003F5004D5683 /* NotificationController.swift */,
+				22A22EA71DA003F6004D5683 /* Assets.xcassets */,
+				22A22EA91DA003F6004D5683 /* Info.plist */,
+				22A22E9F1DA003F5004D5683 /* Supporting Files */,
+			);
+			path = "rallyobedience WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		22A22E9F1DA003F5004D5683 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22A22EA01DA003F5004D5683 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22A22E621DA003F5004D5683 /* rallyobedience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A22EB41DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedience" */;
+			buildPhases = (
+				22A22E5F1DA003F5004D5683 /* Sources */,
+				22A22E601DA003F5004D5683 /* Frameworks */,
+				22A22E611DA003F5004D5683 /* Resources */,
+				22A22EB31DA003F6004D5683 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A22E8E1DA003F5004D5683 /* PBXTargetDependency */,
+			);
+			name = rallyobedience;
+			productName = rallyobedience;
+			productReference = 22A22E631DA003F5004D5683 /* rallyobedience.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22A22E761DA003F5004D5683 /* rallyobedienceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A22EB71DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedienceTests" */;
+			buildPhases = (
+				22A22E731DA003F5004D5683 /* Sources */,
+				22A22E741DA003F5004D5683 /* Frameworks */,
+				22A22E751DA003F5004D5683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A22E791DA003F5004D5683 /* PBXTargetDependency */,
+			);
+			name = rallyobedienceTests;
+			productName = rallyobedienceTests;
+			productReference = 22A22E771DA003F5004D5683 /* rallyobedienceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22A22E811DA003F5004D5683 /* rallyobedienceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A22EBA1DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedienceUITests" */;
+			buildPhases = (
+				22A22E7E1DA003F5004D5683 /* Sources */,
+				22A22E7F1DA003F5004D5683 /* Frameworks */,
+				22A22E801DA003F5004D5683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A22E841DA003F5004D5683 /* PBXTargetDependency */,
+			);
+			name = rallyobedienceUITests;
+			productName = rallyobedienceUITests;
+			productReference = 22A22E821DA003F5004D5683 /* rallyobedienceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		22A22E8A1DA003F5004D5683 /* rallyobedience WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A22EB01DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedience WatchKit App" */;
+			buildPhases = (
+				22A22E891DA003F5004D5683 /* Resources */,
+				22A22EAF1DA003F6004D5683 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A22E9D1DA003F5004D5683 /* PBXTargetDependency */,
+			);
+			name = "rallyobedience WatchKit App";
+			productName = "rallyobedience WatchKit App";
+			productReference = 22A22E8B1DA003F5004D5683 /* rallyobedience WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		22A22E991DA003F5004D5683 /* rallyobedience WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A22EAC1DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedience WatchKit Extension" */;
+			buildPhases = (
+				22A22E961DA003F5004D5683 /* Sources */,
+				22A22E971DA003F5004D5683 /* Frameworks */,
+				22A22E981DA003F5004D5683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rallyobedience WatchKit Extension";
+			productName = "rallyobedience WatchKit Extension";
+			productReference = 22A22E9A1DA003F5004D5683 /* rallyobedience WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22A22E5B1DA003F5004D5683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "St. Poelten University of Applied Sciences";
+				TargetAttributes = {
+					22A22E621DA003F5004D5683 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZCQ554RK9U;
+						ProvisioningStyle = Automatic;
+					};
+					22A22E761DA003F5004D5683 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZCQ554RK9U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22A22E621DA003F5004D5683;
+					};
+					22A22E811DA003F5004D5683 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZCQ554RK9U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22A22E621DA003F5004D5683;
+					};
+					22A22E8A1DA003F5004D5683 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZCQ554RK9U;
+						ProvisioningStyle = Automatic;
+					};
+					22A22E991DA003F5004D5683 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZCQ554RK9U;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 22A22E5E1DA003F5004D5683 /* Build configuration list for PBXProject "rallyobedience" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22A22E5A1DA003F5004D5683;
+			productRefGroup = 22A22E641DA003F5004D5683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22A22E621DA003F5004D5683 /* rallyobedience */,
+				22A22E761DA003F5004D5683 /* rallyobedienceTests */,
+				22A22E811DA003F5004D5683 /* rallyobedienceUITests */,
+				22A22E8A1DA003F5004D5683 /* rallyobedience WatchKit App */,
+				22A22E991DA003F5004D5683 /* rallyobedience WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22A22E611DA003F5004D5683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A22E711DA003F5004D5683 /* LaunchScreen.storyboard in Resources */,
+				22A22E6E1DA003F5004D5683 /* Assets.xcassets in Resources */,
+				22A22E6C1DA003F5004D5683 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E751DA003F5004D5683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E801DA003F5004D5683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E891DA003F5004D5683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A22E941DA003F5004D5683 /* Assets.xcassets in Resources */,
+				22A22E921DA003F5004D5683 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E981DA003F5004D5683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A22EA81DA003F6004D5683 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22A22E5F1DA003F5004D5683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A22E691DA003F5004D5683 /* ViewController.swift in Sources */,
+				22A22E671DA003F5004D5683 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E731DA003F5004D5683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A22E7C1DA003F5004D5683 /* rallyobedienceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E7E1DA003F5004D5683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A22E871DA003F5004D5683 /* rallyobedienceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A22E961DA003F5004D5683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A22EA61DA003F5004D5683 /* NotificationController.swift in Sources */,
+				22A22EA41DA003F5004D5683 /* ExtensionDelegate.swift in Sources */,
+				22A22EA21DA003F5004D5683 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22A22E791DA003F5004D5683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A22E621DA003F5004D5683 /* rallyobedience */;
+			targetProxy = 22A22E781DA003F5004D5683 /* PBXContainerItemProxy */;
+		};
+		22A22E841DA003F5004D5683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A22E621DA003F5004D5683 /* rallyobedience */;
+			targetProxy = 22A22E831DA003F5004D5683 /* PBXContainerItemProxy */;
+		};
+		22A22E8E1DA003F5004D5683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A22E8A1DA003F5004D5683 /* rallyobedience WatchKit App */;
+			targetProxy = 22A22E8D1DA003F5004D5683 /* PBXContainerItemProxy */;
+		};
+		22A22E9D1DA003F5004D5683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A22E991DA003F5004D5683 /* rallyobedience WatchKit Extension */;
+			targetProxy = 22A22E9C1DA003F5004D5683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22A22E6A1DA003F5004D5683 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A22E6B1DA003F5004D5683 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22A22E6F1DA003F5004D5683 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A22E701DA003F5004D5683 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		22A22E901DA003F5004D5683 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A22E911DA003F5004D5683 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22A22EAA1DA003F6004D5683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22A22EAB1DA003F6004D5683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22A22EAD1DA003F6004D5683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				INFOPLIST_FILE = "rallyobedience WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedience.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		22A22EAE1DA003F6004D5683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				INFOPLIST_FILE = "rallyobedience WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedience.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		22A22EB11DA003F6004D5683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				IBSC_MODULE = rallyobedience_WatchKit_Extension;
+				INFOPLIST_FILE = "rallyobedience WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedience.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		22A22EB21DA003F6004D5683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				IBSC_MODULE = rallyobedience_WatchKit_Extension;
+				INFOPLIST_FILE = "rallyobedience WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedience.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		22A22EB51DA003F6004D5683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				INFOPLIST_FILE = rallyobedience/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedience;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		22A22EB61DA003F6004D5683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				INFOPLIST_FILE = rallyobedience/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedience;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		22A22EB81DA003F6004D5683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				INFOPLIST_FILE = rallyobedienceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedienceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rallyobedience.app/rallyobedience";
+			};
+			name = Debug;
+		};
+		22A22EB91DA003F6004D5683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				INFOPLIST_FILE = rallyobedienceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedienceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rallyobedience.app/rallyobedience";
+			};
+			name = Release;
+		};
+		22A22EBB1DA003F6004D5683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				INFOPLIST_FILE = rallyobedienceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedienceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = rallyobedience;
+			};
+			name = Debug;
+		};
+		22A22EBC1DA003F6004D5683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZCQ554RK9U;
+				INFOPLIST_FILE = rallyobedienceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.ac.fhstp.rallyobedienceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = rallyobedience;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22A22E5E1DA003F5004D5683 /* Build configuration list for PBXProject "rallyobedience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A22EAA1DA003F6004D5683 /* Debug */,
+				22A22EAB1DA003F6004D5683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A22EAC1DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedience WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A22EAD1DA003F6004D5683 /* Debug */,
+				22A22EAE1DA003F6004D5683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22A22EB01DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedience WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A22EB11DA003F6004D5683 /* Debug */,
+				22A22EB21DA003F6004D5683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22A22EB41DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A22EB51DA003F6004D5683 /* Debug */,
+				22A22EB61DA003F6004D5683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22A22EB71DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedienceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A22EB81DA003F6004D5683 /* Debug */,
+				22A22EB91DA003F6004D5683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22A22EBA1DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedienceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A22EBB1DA003F6004D5683 /* Debug */,
+				22A22EBC1DA003F6004D5683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22A22E5B1DA003F5004D5683 /* Project object */;
+}
