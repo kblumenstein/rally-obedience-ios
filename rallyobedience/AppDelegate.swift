@@ -48,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func checkDatabase(){
         // init the realm file
         let realm = try! Realm()
+        print("Realm Path : \(realm.configuration.fileURL?.absoluteURL)")
         
         if(realm.isEmpty){
             print("is empty")
