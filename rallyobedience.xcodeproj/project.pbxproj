@@ -26,6 +26,7 @@
 		22A22EC01DA00708004D5683 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22A22EBD1DA00707004D5683 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22A22EC11DA00708004D5683 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A22EBE1DA00707004D5683 /* RealmSwift.framework */; };
 		22A22EC21DA00708004D5683 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22A22EBE1DA00707004D5683 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22AA58C91DA00B0C00791427 /* rally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA58C81DA00B0C00791427 /* rally.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		22A22EA91DA003F6004D5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A22EBD1DA00707004D5683 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		22A22EBE1DA00707004D5683 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		22AA58C81DA00B0C00791427 /* rally.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rally.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				22A22E6D1DA003F5004D5683 /* Assets.xcassets */,
 				22A22E6F1DA003F5004D5683 /* LaunchScreen.storyboard */,
 				22A22E721DA003F5004D5683 /* Info.plist */,
+				22AA58C81DA00B0C00791427 /* rally.swift */,
 			);
 			path = rallyobedience;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 			files = (
 				22A22E691DA003F5004D5683 /* ViewController.swift in Sources */,
 				22A22E671DA003F5004D5683 /* AppDelegate.swift in Sources */,
+				22AA58C91DA00B0C00791427 /* rally.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +831,7 @@
 				22A22EAE1DA003F6004D5683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22A22EB01DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedience WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -835,6 +840,7 @@
 				22A22EB21DA003F6004D5683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22A22EB41DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedience" */ = {
 			isa = XCConfigurationList;
@@ -843,6 +849,7 @@
 				22A22EB61DA003F6004D5683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22A22EB71DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedienceTests" */ = {
 			isa = XCConfigurationList;
@@ -851,6 +858,7 @@
 				22A22EB91DA003F6004D5683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22A22EBA1DA003F6004D5683 /* Build configuration list for PBXNativeTarget "rallyobedienceUITests" */ = {
 			isa = XCConfigurationList;
@@ -859,6 +867,7 @@
 				22A22EBC1DA003F6004D5683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
