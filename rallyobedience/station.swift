@@ -1,5 +1,5 @@
 //
-//  rally.swift
+//  station.swift
 //  rallyobedience
 //
 //  Created by Kerstin Blumenstein on 01/10/2016.
@@ -11,20 +11,14 @@ import RealmSwift
 
 // Station model
 class Station: Object {
-    dynamic var number = ""
+    dynamic var id = ""
     dynamic var name = ""
-    dynamic var description = ""
+    dynamic var desc = ""
     dynamic var picture = ""
-    dynamic var association: Association
     
     //dynamic var owner: Person? // Properties can be optional
-}
-
-// Association model
-class Association: Object {
-    dynamic var name = ""
-    dynamic var country = ""
-    let stations = List<Station>()
-    /*dynamic var birthdate = NSDate(timeIntervalSince1970: 1)
-    let dogs = List<Dog>()*/
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

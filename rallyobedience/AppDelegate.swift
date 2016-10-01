@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        checkDatabase()
+        
         return true
     }
 
@@ -41,6 +45,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func checkDatabase(){
+        // init the realm file
+        let realm = try! Realm()
+        
+        if(realm.isEmpty){
+            print("is empty")
+            let myStation = Station()
+            myStation.id = "Start"
+            myStation.name = "Start"
+            myStation.picture = "start"
+            myStation.desc = "Nachdem der Leistungsrichter den Parcours freigegeben hat, überquert das Team die Startlinie im Tempo normal. Das Team muss vorher keine neue Grundstellung einnehmen, sondern kann sofort nach der Vorbereitung starten. Das Richten und Zeitnehmen beginnt, wenn das Team die Startlinie überschreitet."
+            
+            try! realm.write {
+                realm.add(myStation)
+            }
+            
+        }else{
+            print("not empty")
+        }
+    }
 
 }
 
